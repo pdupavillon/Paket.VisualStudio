@@ -10,7 +10,7 @@ using Paket.VisualStudio.SolutionExplorer;
 namespace Paket.VisualStudio
 {
     [ProvideAutoLoad(UIContextGuids.SolutionExists)]
-    [PackageRegistration(UseManagedResourcesOnly = true)]
+    [PackageRegistration(UseManagedResourcesOnly = true, RegisterUsing = RegistrationMethod.CodeBase)]
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(Guids.PackageGuid)]
